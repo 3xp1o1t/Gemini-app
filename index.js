@@ -20,13 +20,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post("/gen", generateResponse);
 
-// app.get("/gen", (req, res) => {
-//   res.send(history);
-// });
-
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("Hello Gemini");
 });
+
+//Todo front-end with react/nextjs
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
